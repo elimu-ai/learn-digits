@@ -1,4 +1,4 @@
-package eu.mokrzycki.learndigits
+package ai.elimu.learndigits
 
 import org.junit.Test
 

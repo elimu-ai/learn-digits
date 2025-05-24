@@ -1,10 +1,10 @@
-package eu.mokrzycki.learndigits.ui.home
+package ai.elimu.learndigits.ui.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.backbase.deferredresources.DeferredText
-import eu.mokrzycki.learndigits.R
+import ai.elimu.learndigits.R
 
 class HomeViewModel : ViewModel() {
 

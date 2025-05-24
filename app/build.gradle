@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'eu.mokrzycki.learndigits'
+    namespace 'ai.elimu.learndigits'
     compileSdk 35
 
     defaultConfig {

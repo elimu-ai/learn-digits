@@ -1,4 +1,4 @@
-package eu.mokrzycki.learndigits.ui.game
+package ai.elimu.learndigits.ui.game
 
 import android.animation.Animator
 import android.animation.ValueAnimator
@@ -9,12 +9,12 @@ import android.media.MediaPlayer
 import android.os.Handler
 import android.os.Vibrator
 import android.util.Log
-import androidx.core.view.forEach
 import androidx.core.view.isVisible
 import androidx.lifecycle.ViewModel
 import com.google.android.material.button.MaterialButton
-import eu.mokrzycki.learndigits.R
-import eu.mokrzycki.learndigits.databinding.FragmentGameBinding
+import ai.elimu.learndigits.R
+import ai.elimu.learndigits.databinding.FragmentGameBinding
+import androidx.core.view.forEach
 import java.io.IOException
 import kotlin.random.Random
 

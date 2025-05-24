@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="eu.mokrzycki.learndigits.ui.game.GameFragment">
+    tools:context="ai.elimu.learndigits.ui.game.GameFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/container_1"
