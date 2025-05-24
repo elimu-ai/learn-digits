@@ -7,5 +7,6 @@
     <string name="title_about">Σχετικά</string>
     <string name="home_labels_introduction">Η νέα μας εφαρμογή αφιερωμένη στα παιδιά, που τους επιτρέπει να μαθαίνουν αριθμούς με διαδραστικό και διασκεδαστικό τρόπο!\n\nΤα παιδιά ακούν τις οδηγίες και επιλέγουν το αντίστοιχο ψηφίο από το 0 έως το 9 και μετά τη σωστή απάντηση, αναπτύσσεται ένα όμορφο φυτό!</string>
     <string name="assets_folder_lang">el</string>
+    <string name="about_author">© 2023 | Michał Mokrzycki\nmokrzycki.eu</string>
     <string name="about_version">Έκδοση %s</string>
 </resources>
