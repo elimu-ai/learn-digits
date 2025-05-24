@@ -5,12 +5,11 @@ plugins {
 
 android {
     namespace 'eu.mokrzycki.learndigits'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
-        applicationId "eu.mokrzycki.learndigits"
-        minSdk 24
-        targetSdk 34
+        minSdk 26
+        targetSdk 35
         versionCode 8
         versionName "1.0.7"
 
@@ -25,12 +24,12 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
     kotlinOptions {
-        jvmTarget = '11'
+        jvmTarget = '17'
     }
 
     buildFeatures {
