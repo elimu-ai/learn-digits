@@ -1,11 +1,11 @@
-package eu.mokrzycki.learndigits.ui.exit
+package ai.elimu.learndigits.ui.exit
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import eu.mokrzycki.learndigits.databinding.FragmentExitBinding
+import ai.elimu.learndigits.databinding.FragmentExitBinding
 import kotlin.system.exitProcess
 
 class ExitFragment : Fragment() {

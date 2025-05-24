@@ -1,4 +1,4 @@
-package eu.mokrzycki.learndigits.ui.game
+package ai.elimu.learndigits.ui.game
 
 import android.content.res.AssetManager
 import android.os.Vibrator

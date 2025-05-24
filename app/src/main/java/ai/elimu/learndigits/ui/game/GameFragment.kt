@@ -1,4 +1,4 @@
-package eu.mokrzycki.learndigits.ui.game
+package ai.elimu.learndigits.ui.game
 
 import android.content.Context
 import android.content.res.AssetManager
@@ -9,8 +9,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import eu.mokrzycki.learndigits.R
-import eu.mokrzycki.learndigits.databinding.FragmentGameBinding
+import ai.elimu.learndigits.R
+import ai.elimu.learndigits.databinding.FragmentGameBinding
 
 
 class GameFragment : Fragment() {

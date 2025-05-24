@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="eu.mokrzycki.learndigits.ui.home.HomeFragment"
+        android:name="ai.elimu.learndigits.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_plant"
-        android:name="eu.mokrzycki.learndigits.ui.game.GameFragment"
+        android:name="ai.elimu.learndigits.ui.game.GameFragment"
         android:label="@string/title_game"
         tools:layout="@layout/fragment_game" />
 
     <fragment
         android:id="@+id/navigation_about"
-        android:name="eu.mokrzycki.learndigits.ui.about.AboutFragment"
+        android:name="ai.elimu.learndigits.ui.about.AboutFragment"
         android:label="@string/title_about"
         tools:layout="@layout/fragment_about" />
 

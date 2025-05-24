@@ -4,6 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/forest_green"
-    tools:context="eu.mokrzycki.learndigits.ui.exit.ExitFragment">
+    tools:context="ai.elimu.learndigits.ui.exit.ExitFragment">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
