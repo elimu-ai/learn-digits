@@ -62,7 +62,7 @@
         android:id="@+id/buttons_container"
         android:layout_width="0dp"
         android:layout_height="364dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="5dp"
         android:paddingBottom="?actionBarSize"
         android:splitMotionEvents="false"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -305,8 +305,8 @@
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/lottie_play"
-            android:layout_width="279dp"
-            android:layout_height="260dp"
+            android:layout_width="285dp"
+            android:layout_height="265dp"
             android:layout_centerInParent="true"
             android:padding="32dp"
             android:scaleType="fitCenter"
