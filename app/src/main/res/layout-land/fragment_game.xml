@@ -291,13 +291,14 @@
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/lottie_animation_success"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="279dp"
+            android:layout_height="260dp"
             android:layout_centerInParent="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.100000024"
             app:lottie_autoPlay="false"
             app:lottie_loop="false"
             app:lottie_rawRes="@raw/success" />
