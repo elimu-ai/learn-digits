@@ -9,7 +9,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/container_1"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="340dp"
+        android:layout_marginBottom="71dp"
         android:background="@color/container_1_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/buttons_container"
@@ -61,12 +62,13 @@
         android:id="@+id/buttons_container"
         android:layout_width="0dp"
         android:layout_height="364dp"
+        android:layout_marginBottom="30dp"
         android:paddingBottom="?actionBarSize"
         android:splitMotionEvents="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/container_1"
-        app:layout_constraintTop_toTopOf="@+id/play_container">
+        app:layout_constraintTop_toBottomOf="@+id/parent">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_0"
@@ -276,12 +278,13 @@
         android:id="@+id/play_container"
         android:layout_width="0dp"
         android:layout_height="410dp"
-        android:layout_marginBottom="412dp"
-        android:background="@drawable/rounded_top"
+        android:layout_marginBottom="342dp"
+        android:background="@drawable/normal_top"
         android:backgroundTint="@color/forest_green"
         android:clickable="true"
         android:paddingBottom="?actionBarSize"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/container_1"
         app:layout_constraintTop_toBottomOf="@+id/container_1">
@@ -301,8 +304,8 @@
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/lottie_play"
-            android:layout_width="205dp"
-            android:layout_height="195dp"
+            android:layout_width="279dp"
+            android:layout_height="260dp"
             android:layout_centerInParent="true"
             android:padding="32dp"
             android:scaleType="fitCenter"
