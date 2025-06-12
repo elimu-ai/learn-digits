@@ -8,10 +8,12 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/container_1"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@color/container_1_bg"
-        app:layout_constraintBottom_toTopOf="@id/buttons_container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttons_container"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.airbnb.lottie.LottieAnimationView
@@ -46,25 +48,25 @@
             android:id="@+id/lottie_bg_layer"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/forest_green_transp" />
+            android:background="@color/forest_green_transp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <View
-        android:id="@+id/top_corner"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/cornered_height"
-        android:background="@drawable/rounded_top"
-        app:layout_constraintBottom_toTopOf="@id/buttons_container" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/buttons_container"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="364dp"
         android:paddingBottom="?actionBarSize"
         android:splitMotionEvents="false"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/container_1">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/container_1"
+        app:layout_constraintTop_toTopOf="@+id/play_container">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_0"
@@ -272,18 +274,21 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/play_container"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="410dp"
+        android:layout_marginBottom="412dp"
         android:background="@drawable/rounded_top"
         android:backgroundTint="@color/forest_green"
         android:clickable="true"
         android:paddingBottom="?actionBarSize"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/top_corner">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/container_1"
+        app:layout_constraintTop_toBottomOf="@+id/container_1">
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/lottie_animation_success"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -296,8 +301,8 @@
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/lottie_play"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="205dp"
+            android:layout_height="195dp"
             android:layout_centerInParent="true"
             android:padding="32dp"
             android:scaleType="fitCenter"
@@ -305,6 +310,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
             app:lottie_progress="1"
