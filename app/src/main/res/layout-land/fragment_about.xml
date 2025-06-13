@@ -91,7 +91,7 @@
         android:adjustViewBounds="true"
         android:fontFamily="sans-serif-light"
         android:gravity="center"
-        android:src="@drawable/ic_logo_github"
+        android:drawableStart="@drawable/ic_logo_github"
         android:text="GitHub"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
         android:textColor="@color/white"
