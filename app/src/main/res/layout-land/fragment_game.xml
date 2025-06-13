@@ -9,8 +9,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/container_1"
         android:layout_width="0dp"
-        android:layout_height="340dp"
-        android:layout_marginBottom="71dp"
+        android:layout_height="374dp"
+        android:layout_marginBottom="37dp"
         android:background="@color/container_1_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/buttons_container"
@@ -47,14 +47,15 @@
 
         <View
             android:id="@+id/lottie_bg_layer"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="364dp"
+            android:layout_height="342dp"
             android:background="@color/forest_green_transp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -62,13 +63,13 @@
         android:id="@+id/buttons_container"
         android:layout_width="0dp"
         android:layout_height="364dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="30dp"
         android:paddingBottom="?actionBarSize"
         android:splitMotionEvents="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/container_1"
-        app:layout_constraintTop_toTopOf="@+id/play_container">
+        app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_0"
@@ -278,7 +279,7 @@
         android:id="@+id/play_container"
         android:layout_width="0dp"
         android:layout_height="410dp"
-        android:layout_marginBottom="342dp"
+        android:layout_marginBottom="376dp"
         android:background="@drawable/normal_top"
         android:backgroundTint="@color/forest_green"
         android:clickable="true"
