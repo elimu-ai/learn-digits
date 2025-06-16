@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">अंक</string>
+    <string name="title_home">मुखपृष्ठ</string>
+    <string name="title_game">खेल</string>
+    <string name="title_exit">बाहर जाएं</string>
+    <string name="title_about">जानकारी</string>
+    <string name="home_labels_introduction">यह हमारे बच्चों को समर्पित नई ऐप है, जो उन्हें इंटरैक्टिव और मजेदार तरीके से संख्याएँ सीखने की सुविधा देती है!\n\nबच्चे निर्देश सुनते हैं और 0 से 9 तक सही अंक का चयन करते हैं, और सही उत्तर देने पर एक सुंदर पौधा बढ़ता है!</string>
+    <string name="assets_folder_lang">hi</string>
+    <string name="about_author">© 2023 | Michał Mokrzycki\nmokrzycki.eu</string>
+    <string name="about_version">संस्करण %s</string>
+</resources>

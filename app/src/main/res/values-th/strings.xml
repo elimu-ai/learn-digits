@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ตัวเลข</string>
+    <string name="title_home">หน้าหลัก</string>
+    <string name="title_game">เกม</string>
+    <string name="title_exit">ออก</string>
+    <string name="title_about">เกี่ยวกับ</string>
+    <string name="home_labels_introduction">นี่คือแอปใหม่ของเราที่ออกแบบมาสำหรับเด็ก ๆ เพื่อให้พวกเขาได้เรียนรู้ตัวเลขอย่างมีปฏิสัมพันธ์และสนุกสนาน!\n\nเด็ก ๆ จะฟังคำแนะนำและเลือกตัวเลขที่ตรงกันตั้งแต่ 0 ถึง 9 และเมื่อเลือกถูกต้อง พืชที่สวยงามจะเติบโตขึ้น!</string>
+    <string name="assets_folder_lang">th</string>
+    <string name="about_author">© 2023 | Michał Mokrzycki\nmokrzycki.eu</string>
+    <string name="about_version">เวอร์ชัน %s</string>
+</resources>
