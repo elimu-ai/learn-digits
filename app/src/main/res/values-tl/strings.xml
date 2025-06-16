@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mga Numero</string>
+    <string name="title_home">Home</string>
+    <string name="title_game">Laro</string>
+    <string name="title_exit">Labas</string>
+    <string name="title_about">Tungkol</string>
+    <string name="home_labels_introduction">Narito ang aming bagong app na nakatuon para sa mga bata, na nagbibigay-daan sa kanila na matutunan ang mga numero sa isang interaktibo at masayang paraan!\n\nNakikinig ang mga bata sa tagubilin at pinipili ang tamang numero mula 0 hanggang 9, at kapag tama ang sagot, tumutubo ang isang magandang halaman!</string>
+    <string name="assets_folder_lang">tl</string>
+    <string name="about_author">© 2023 | Michał Mokrzycki\nmokrzycki.eu</string>
+    <string name="about_version">Bersyon %s</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Chữ số</string>
+    <string name="title_home">Trang chủ</string>
+    <string name="title_game">Trò chơi</string>
+    <string name="title_exit">Thoát</string>
+    <string name="title_about">Giới thiệu</string>
+    <string name="home_labels_introduction">Đây là ứng dụng mới của chúng tôi dành cho trẻ em, giúp các em học các con số một cách tương tác và thú vị!\n\nTrẻ em nghe hướng dẫn và chọn chữ số tương ứng từ 0 đến 9, và khi trả lời đúng, một cái cây xinh đẹp sẽ mọc lên!</string>
+    <string name="assets_folder_lang">vi</string>
+    <string name="about_author">© 2023 | Michał Mokrzycki\nmokrzycki.eu</string>
+    <string name="about_version">Phiên bản %s</string>
+</resources>
