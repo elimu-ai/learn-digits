@@ -9,13 +9,13 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/container_1"
         android:layout_width="0dp"
-        android:layout_height="374dp"
-        android:layout_marginBottom="37dp"
+        android:layout_height="0dp"
         android:background="@color/container_1_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/buttons_container"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.00999999">
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/lottie_bg"
@@ -63,7 +63,7 @@
         android:id="@+id/buttons_container"
         android:layout_width="0dp"
         android:layout_height="364dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="48dp"
         android:paddingBottom="?actionBarSize"
         android:splitMotionEvents="false"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -278,8 +278,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/play_container"
         android:layout_width="0dp"
-        android:layout_height="410dp"
-        android:layout_marginBottom="376dp"
+        android:layout_height="412dp"
+        android:layout_marginBottom="380dp"
         android:background="@drawable/normal_top"
         android:backgroundTint="@color/forest_green"
         android:clickable="true"
@@ -287,13 +287,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/container_1"
-        app:layout_constraintTop_toBottomOf="@+id/container_1">
+        app:layout_constraintTop_toBottomOf="@+id/container_1"
+        app:layout_constraintVertical_bias="0.52">
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/lottie_animation_success"
             android:layout_width="279dp"
             android:layout_height="260dp"
             android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -308,6 +310,7 @@
             android:layout_width="285dp"
             android:layout_height="265dp"
             android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
             android:padding="32dp"
             android:scaleType="fitCenter"
             app:layout_constraintBottom_toBottomOf="parent"
