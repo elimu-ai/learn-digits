@@ -1,6 +1,7 @@
 package ai.elimu.learndigits.ui.game
 
 import ai.elimu.analytics.utils.AssessmentEventUtil
+import ai.elimu.learndigits.BuildConfig
 import android.animation.Animator
 import android.animation.ValueAnimator
 import android.content.res.AssetFileDescriptor
@@ -16,6 +17,7 @@ import com.google.android.material.button.MaterialButton
 import ai.elimu.learndigits.R
 import ai.elimu.learndigits.databinding.FragmentGameBinding
 import ai.elimu.model.v2.gson.content.NumberGson
+import android.content.Context
 import androidx.core.view.forEach
 import org.json.JSONObject
 import java.io.IOException
@@ -24,6 +26,7 @@ import kotlin.random.Random
 class GameViewModel(
     private val assetManager: AssetManager,
     private val vibrator: Vibrator,
+    private val context: Context
 ) : ViewModel() {
 
     private val growDuration = 400L
@@ -289,8 +292,8 @@ class GameViewModel(
                         additionalData = JSONObject().apply {
                             put("numberSelected", idTag)
                         },
-                        context = null, // TODO
-                        analyticsApplicationId = null // TODO
+                        context = context,
+                        analyticsApplicationId = BuildConfig.ANALYTICS_APPLICATION_ID
                     )
                 } else {
                     playPlantAnimation(fragmentGameBinding, 1f) { progress ->
@@ -304,8 +307,8 @@ class GameViewModel(
                         numberGson = numberGson,
                         masteryScore = 1f,
                         timeSpentMs = 0, // TODO
-                        context = null, // TODO
-                        analyticsApplicationId = null // TODO
+                        context = context,
+                        analyticsApplicationId = BuildConfig.ANALYTICS_APPLICATION_ID
                     )
                 }
             }
