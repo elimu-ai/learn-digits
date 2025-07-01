@@ -248,6 +248,8 @@ class GameViewModel(
     }
 
     private fun onContinueGame(fragmentGameBinding: FragmentGameBinding, language: String) {
+        Log.i(this::class.simpleName, "onContinueGame")
+
         setButtonsClickable(fragmentGameBinding, false)
         selectRandomDigit(language)
         askForDigit(selectedSoundDigit, language) {
