@@ -33,6 +33,7 @@ class GameViewModel(
     private var selectedSoundDigit = 0
     private var selectedSoundWrong = 0
     private var selectedSoundSuccess = 0
+    private var assessmentStartTime: Long = 0
 
     private fun setNullToButtonsOnClickListeners(fragmentGameBinding: FragmentGameBinding) {
         fragmentGameBinding.buttonsContainer.forEach { view ->
@@ -251,6 +252,7 @@ class GameViewModel(
         selectRandomDigit(language)
         askForDigit(selectedSoundDigit, language) {
             setButtonsClickable(fragmentGameBinding, true)
+            assessmentStartTime = System.currentTimeMillis()
         }
     }
 
@@ -276,6 +278,7 @@ class GameViewModel(
                 val numberGson = NumberGson().apply {
                     this.value = selectedSoundDigit
                 }
+                val timeSpentMs = System.currentTimeMillis() - assessmentStartTime
 
                 if (idTag != selectedSoundDigit) {
                     selectRandomSoundWrong(language)
@@ -288,7 +291,7 @@ class GameViewModel(
                     AssessmentEventUtil.reportNumberAssessmentEvent(
                         numberGson = numberGson,
                         masteryScore = 0f,
-                        timeSpentMs = 0, // TODO
+                        timeSpentMs = timeSpentMs,
                         additionalData = JSONObject().apply {
                             put("numberSelected", idTag)
                         },
@@ -306,7 +309,7 @@ class GameViewModel(
                     AssessmentEventUtil.reportNumberAssessmentEvent(
                         numberGson = numberGson,
                         masteryScore = 1f,
-                        timeSpentMs = 0, // TODO
+                        timeSpentMs = timeSpentMs,
                         context = context,
                         analyticsApplicationId = BuildConfig.ANALYTICS_APPLICATION_ID
                     )
