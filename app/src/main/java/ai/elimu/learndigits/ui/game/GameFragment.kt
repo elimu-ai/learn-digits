@@ -34,7 +34,11 @@ class GameFragment : Fragment() {
     private val gameViewModel by lazy {
         ViewModelProvider(
             this,
-            GameViewModelFactory(assetManager, vibrator)
+            GameViewModelFactory(
+                assetManager,
+                vibrator,
+                requireContext().applicationContext
+            )
         )[GameViewModel::class.java]
     }
 
