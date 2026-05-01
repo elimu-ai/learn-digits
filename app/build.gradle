@@ -15,7 +15,6 @@ android {
         targetSdk 36
         versionCode 1000009
         versionName "1.0.9-SNAPSHOT"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -46,7 +45,7 @@ android {
 }
 
 dependencies {
-    implementation 'ai.elimu:content-provider:1.4.42'
+    implementation 'ai.elimu:content-provider:1.4.75'
 
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
